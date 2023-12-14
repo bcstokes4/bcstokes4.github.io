@@ -1,0 +1,210 @@
+/*********************
+  1. Variables 
+*********************/
+/* brand colors */
+.btn-main {
+  padding: 15px 42px;
+  background: #fd562a;
+  color: #fff;
+  border-radius: 5px;
+  font-family: 'Poppins', sans-serif;
+  text-transform: uppercase;
+}
+.btn-main:hover {
+  background: #bf2902;
+  color: #fff;
+}
+/*********************
+  3. General Style 
+*********************/
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  color: #615978;
+}
+a {
+  color: #fd562a;
+  text-decoration: none;
+  transition: 0.3s;
+}
+a:hover {
+  color: #f23402;
+}
+p:last-of-type {
+  margin-bottom: 0;
+}
+ul {
+  padding-left: 0;
+}
+li {
+  list-style: none;
+}
+.section-block {
+  padding-top: 120px;
+  padding-bottom: 60px;
+}
+.section-block .row > div {
+  margin-bottom: 60px;
+}
+.section-title {
+  text-align: center;
+  margin-bottom: 72px;
+}
+.section-title.dark {
+  color: #fff;
+}
+.lead {
+  color: #948daa;
+}
+.lead.dark {
+  color: #b0aac0;
+}
+/* Typography */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Poppins', sans-serif;
+  color: #222;
+}
+.landing-hero {
+  background: #222;
+  color: #fff;
+}
+.landing-hero .hero-logo {
+  width: 136px;
+}
+.landing-hero .hero-content {
+  min-height: 300px;
+  position: relative;
+  padding-top: 120px;
+  padding-bottom: 72px;
+}
+.landing-hero .hero-content > .row {
+  width: 100%;
+}
+.landing-hero h1 {
+  font-size: 36px;
+  margin-top: 36px;
+  color: #fff;
+}
+.landing-hero h1 span {
+  font-size: 36px;
+  display: block;
+  color: #fd562a;
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+.landing-hero h1 strong {
+  color: #fd562a;
+}
+.landing-hero .content-block p {
+  font-size: 30px;
+}
+/*********************
+  4. Header
+*********************/
+.landing .site-header .header-btn {
+  padding: 12px 24px;
+  font-size: 16px;
+}
+.landing .site-header .header-btn:hover {
+  color: #fff;
+}
+.site-header {
+  position: absolute;
+  width: 100%;
+}
+.site-header .navbar {
+  padding-top: 24px;
+  padding-bottom: 24px;
+  z-index: 1;
+  transition: 0.3s;
+}
+.site-header .navbar.fixed-top {
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+.site-header .nav-item .nav-link {
+  padding-left: 1.2rem;
+  padding-right: 1.2rem;
+}
+.site-header .nav-item .active {
+  color: #fd562a;
+}
+.site-header a {
+  color: #fff;
+  text-transform: capitalize;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+}
+.site-header a:hover,
+.site-header a:focus {
+  color: #fd562a;
+}
+.site-header .navbar-brand {
+  width: 72px;
+}
+/*********************
+  3. Demo Section
+*********************/
+.demo-section {
+  background: #222;
+  padding-top: 0;
+}
+.demo-section .demo-wrapper {
+  transition: 0.4s;
+}
+.demo-section .demo-wrapper:hover {
+  margin-top: -12px;
+}
+.demo-section .demo-wrapper img {
+  border: 3px solid #fff;
+  margin-bottom: 30px;
+  box-shadow: 0 20px 42px rgba(0, 0, 0, 0.7);
+}
+.demo-section .demo-wrapper h3 {
+  font-size: 16px;
+  text-align: center;
+  color: #fff;
+}
+/*********************
+  15. Site Footer
+*********************/
+.site-footer {
+  background: #222;
+  padding-top: 90px;
+  padding-bottom: 60px;
+}
+.site-footer .container {
+  position: relative;
+}
+.site-footer h3 {
+  color: #fff;
+  font-size: 21px;
+  margin-bottom: 30px;
+}
+.site-footer p {
+  color: #b0aac0;
+}
+.site-footer input {
+  padding-left: 24px;
+  padding-right: 24px;
+}
+.site-footer input:focus {
+  border-color: #fd562a;
+  box-shadow: none;
+}
+.site-footer .footer-brand {
+  margin-bottom: 36px;
+  display: inline-block;
+}
+.site-footer .footer-brand img {
+  width: 60px;
+}
+.site-footer .copyright-credit p {
+  margin-top: 60px;
+  margin-bottom: 0;
+}

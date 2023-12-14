@@ -1,0 +1,292 @@
+/*********************
+  1. Variables 
+*********************/ 
+
+@title-font: 'Poppins', sans-serif;
+@text-font: 'Open Sans', sans-serif;
+@title-black: #222;
+@text-color: #615978;
+@main-color: #fd562a;
+@white: #fff;
+@light-gray: #f9f9f9;
+
+/* brand colors */
+@facebook-color: #1877f2;
+@twitter-color: #1da1f2;
+@linkedin-color: #0077b5;
+
+
+.btn-main{
+	padding: 15px 42px;
+	background: @main-color;
+	color: @white;
+	border-radius: 5px;
+	font-family: @title-font;
+	text-transform: uppercase;
+
+	&:hover{
+		background: darken(@main-color, 20%);
+		color: @white;
+	}
+}
+
+/*********************
+  3. General Style 
+*********************/ 
+
+body{
+	font-family: @text-font;
+	font-size: 18px;
+	color: @text-color;
+}
+
+a{
+	color: @main-color;
+	text-decoration: none;
+	transition: .3s;
+
+	&:hover{
+		color: darken(@main-color, 10%);
+		
+	}
+}
+
+
+p{
+
+	&:last-of-type{
+		margin-bottom: 0;
+	}
+}
+
+ul{
+	padding-left: 0;
+}
+
+li{
+	list-style: none;
+}
+
+.section-block{
+	padding-top: 120px;
+	padding-bottom: 60px;
+
+	.row > div{
+		margin-bottom: 60px;
+	}
+}
+
+.section-title{
+	text-align: center;
+	margin-bottom: 72px;
+
+
+	&.dark{
+		color: @white;
+	}
+}
+
+.lead{
+	color: lighten(@text-color, 20%);
+
+	&.dark{
+		color: lighten(@text-color, 30%);
+	}
+}
+
+/* Typography */
+
+h1,h2,h3,h4,h5,h6{
+	font-family: @title-font;
+	color: @title-black;
+}
+
+
+.landing-hero{
+ 	
+ 	background: #222;
+ 	color: #fff;
+
+ 	.hero-logo{
+ 		width: 136px;
+
+ 	}
+
+ 	.hero-content{
+ 		min-height: 300px;
+ 		position: relative;
+ 		padding-top: 120px;
+ 		padding-bottom: 72px;
+
+
+ 		>.row{
+ 			width: 100%;
+ 		}
+ 		
+ 	}
+
+ 	h1{
+ 		font-size: 36px;
+ 		margin-top: 36px;
+ 		color: @white;
+
+ 		span{
+ 			font-size: 36px;
+ 			display: block;
+ 			color: @main-color;
+ 			margin-top: 24px;
+ 			margin-bottom: 24px;
+ 		}
+
+ 		strong{
+ 			color: @main-color;
+ 		}
+ 	}
+
+ 	.content-block{
+ 		p{
+ 			font-size: 30px;
+ 		}
+ 	}
+ }
+
+/*********************
+  4. Header
+*********************/
+
+ .landing{
+	.site-header{
+		.header-btn{
+			padding: 12px 24px;
+			font-size: 16px;
+
+			&:hover{
+				color: @white;
+			}
+		}
+	}
+}
+
+.site-header{
+	position: absolute;
+	width: 100%;
+
+	.navbar{
+		padding-top: 24px;
+		padding-bottom: 24px;
+		z-index: 1;
+		//background: red;
+		transition: .3s;
+
+
+		&.fixed-top{
+			padding-top: 12px;
+			padding-bottom: 12px;
+		}
+	}
+
+	.nav-item{
+
+		.nav-link{
+			padding-left: 1.2rem;
+			padding-right: 1.2rem;
+		}
+		.active{
+			color: @main-color;
+		}
+	}
+
+	a{
+		color: @white;
+		text-transform: capitalize;
+		font-family: @title-font;
+		font-weight: bold;
+
+		&:hover, &:focus{
+			color: @main-color;
+		}
+	}
+
+	.navbar-brand{
+		width: 72px;
+	}
+}
+
+
+/*********************
+  3. Demo Section
+*********************/
+.demo-section{
+	background: @title-black;
+	padding-top: 0;
+
+	.demo-wrapper{
+		transition: .4s;
+
+		&:hover{
+			margin-top: -12px;
+		}
+
+		img{
+			border: 3px solid @white;
+			margin-bottom: 30px;
+			box-shadow: 0 20px 42px rgba(0, 0, 0, .7);
+		}
+
+		h3{
+			font-size: 16px;
+			text-align: center;
+			color: @white;
+		}
+	}
+}
+
+
+/*********************
+  15. Site Footer
+*********************/
+
+ .site-footer{
+ 	background: @title-black;
+ 	padding-top: 90px;
+ 	padding-bottom: 60px;
+
+ 	.container{
+ 		position: relative;
+ 	}
+
+ 	h3{
+ 		color: @white;
+ 		font-size: 21px;
+ 		margin-bottom: 30px;
+ 	}
+
+ 	p{
+ 		color: lighten(@text-color, 30%);
+ 	}
+
+ 	input{
+ 		padding-left: 24px;
+ 		padding-right: 24px;
+
+ 		&:focus{
+ 			border-color: @main-color;
+ 			box-shadow: none;
+ 		}
+ 	}
+
+ 	.footer-brand{
+ 		margin-bottom: 36px;
+ 		display: inline-block;
+ 		img{
+ 			width: 60px;
+ 		}
+ 	}
+
+ 	.copyright-credit{
+ 		p{
+ 			margin-top: 60px;
+ 			margin-bottom: 0;
+ 		}
+ 	}
+ }
